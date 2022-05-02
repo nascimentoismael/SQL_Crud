@@ -162,7 +162,7 @@
                 </svg>
             </div>
         </div>
-        <p class="mt-2 text-sm text-red-600" id="password-error">Sua senha precisa ter no mínimo 6 caracteres.</p>
+        <p class="mt-2 text-sm text-red-600 hidden" id="password-error">Sua senha precisa ter no mínimo 6 caracteres.</p>
     </div>
     <br>
     <div class="border border-gray-300 rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-200 focus-within:border-indigo-200">
@@ -170,7 +170,7 @@
             <div class="mt-1">
                 <input type="password" name="senhaCheck" id="senha" minlength=6 class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="you@example.com" aria-describedby="email-description">
             </div>
-            <p class="mt-2 text-sm text-gray-500" id="password-description">As senhas indicadas não são iguais.</p>
+            <p class="mt-2 text-sm text-gray-500 hidden" id="password-description">As senhas indicadas não são iguais.</p>
         </div>
     </div>
     <br>
@@ -185,7 +185,7 @@
                 </svg>
             </div>
         </div>
-        <p class="mt-2 text-sm text-red-600" id="password-error">As senhas indicadas não são iguais.</p>
+        <p class="mt-2 text-sm text-red-600 hidden" id="password-error">As senhas indicadas não são iguais.</p>
     </div>
     <br>
 
@@ -196,5 +196,6 @@
     </div>
     <br><br>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
