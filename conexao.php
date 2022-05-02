@@ -1,7 +1,14 @@
 <?php
-//conexão no MacOS
-$dbconn = mysql_connect('localhost', 'root', 'root');
-//conexão postgress
-//$dbconn = pg_connect("host=localhost port=3306 dbname=formulario user=root password=root");
-//conexão linux
-//conexão vianna
+
+$servername = "localhost";
+$username = "root";
+$password = "root";
+
+$conn =  mysqli_connect($servername, $username, $password);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+//$dbconn = mysql_connect('localhost', 'root', 'root');
